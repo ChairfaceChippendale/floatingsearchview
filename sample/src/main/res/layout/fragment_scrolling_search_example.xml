@@ -18,12 +18,13 @@
             android:id="@+id/appbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="64dp"
-                android:background="@color/light_gray"
+                android:background="@android:color/transparent"
                 app:layout_scrollFlags="scroll|enterAlways"/>
 
         </android.support.design.widget.AppBarLayout>
@@ -35,12 +36,15 @@
             app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
             <TextView
+                android:layout_margin="12dp"
                 android:clipToPadding="false"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/random_text"
                 android:textSize="18sp"/>
+
         </android.support.v4.widget.NestedScrollView>
+
     </android.support.design.widget.CoordinatorLayout>
 
     <com.arlib.floatingsearchview.FloatingSearchView
@@ -58,5 +62,6 @@
         app:floatingSearch_searchHint="Search..."
         app:floatingSearch_showSearchKey="true"
         app:floatingSearch_suggestionsListAnimDuration="250"/>
+
 </RelativeLayout>
 

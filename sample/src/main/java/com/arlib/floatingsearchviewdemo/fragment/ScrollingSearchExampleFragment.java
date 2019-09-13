@@ -33,7 +33,7 @@ public class ScrollingSearchExampleFragment extends BaseExampleFragment implemen
     public static final long FIND_SUGGESTION_SIMULATED_DELAY = 250;
 
     private FloatingSearchView mSearchView;
-    private AppBarLayout mAppBar;
+//    private AppBarLayout mAppBar;
 
     private boolean mIsDarkSearchTheme = false;
 
@@ -53,9 +53,9 @@ public class ScrollingSearchExampleFragment extends BaseExampleFragment implemen
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         mSearchView = (FloatingSearchView) view.findViewById(R.id.floating_search_view);
-        mAppBar = (AppBarLayout) view.findViewById(R.id.appbar);
+//        mAppBar = (AppBarLayout) view.findViewById(R.id.appbar);
 
-        mAppBar.addOnOffsetChangedListener(this);
+//        mAppBar.addOnOffsetChangedListener(this);
 
         setupDrawer();
         setupSearchBar();
